@@ -1,0 +1,22 @@
+{
+  "name": "cypressautomationproject",
+  "version": "1.0.0",
+  "description": "Learning from scratch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piyush2891/cypressAutomationProject.git"
+  },
+  "author": "Piyush Thakur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/piyush2891/cypressAutomationProject/issues"
+  },
+  "homepage": "https://github.com/piyush2891/cypressAutomationProject#readme",
+  "dependencies": {
+    "cypress": "^13.17.0"
+  }
+}

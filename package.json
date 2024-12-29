@@ -18,5 +18,8 @@
   "homepage": "https://github.com/piyush2891/cypressAutomationProject#readme",
   "dependencies": {
     "cypress": "^13.17.0"
+  },
+  "devDependencies": {
+    "cypress-iframe": "^1.0.1"
   }
 }

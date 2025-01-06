@@ -17,13 +17,23 @@ import "@4tw/cypress-drag-drop";
 //
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
+// 
 //
 // -- This is a dual command --
 // Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
+// 
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 /// <reference types="Cypress" />
+
+Cypress.Commands.add('submitFormDetails',()=>{
+    cy.get("#country").type("in")
+    cy.wait(5000)
+    cy.get("div[class='suggestions'] ul li a").each(($el,index,$list)=>{
+        if($el.text()==="India"){
+            cy.wrap($el).click()
+        }
+    })
+})

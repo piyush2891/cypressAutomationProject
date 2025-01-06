@@ -4,7 +4,11 @@
   "description": "Learning from scratch",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run",
+    "headedMode": "npx cypress run --headed",
+    "testInChrome": " npx cypress run --browser chrome",
+    "smokeTest": "npx cypress run --spec  \"cypress/e2e/examples/test1.cy.js\"",
+    "recordDashboardTest": "npx cypress run --record --key 5f4b3b3b-7b7b-4b7b-8b7b-7b7b7b7b7b7b"
   },
   "repository": {
     "type": "git",
@@ -17,6 +21,7 @@
   },
   "homepage": "https://github.com/piyush2891/cypressAutomationProject#readme",
   "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
     "cypress": "^13.17.0"
   },
   "devDependencies": {
